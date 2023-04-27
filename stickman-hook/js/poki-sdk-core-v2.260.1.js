@@ -4058,7 +4058,7 @@
           "/" !== e[0] && (e = "/" + e);
           var t = encodeURIComponent(window.location.protocol + "//" + window.location.host + e + window.location.search)
             , i = encodeURIComponent(document.referrer);
-          return fetch("json/null.json?https://devs-api.poki.com/gameinfo/@sdk?href=" + t + "&referrer=" + i, {
+          return fetch("json/null.json", {
               method: "GET",
               headers: {
                   "Content-Type": "text/plain"
@@ -4276,7 +4276,7 @@
                   switch (r.label) {
                   case 0:
                       return r.trys.push([0, 3, , 4]),
-                      [4, fetch("json/geo.json?https://geo.poki.io/", {
+                      [4, fetch("json/geo.json", {
                           method: "GET",
                           headers: {
                               "Content-Type": "text/plain"
@@ -5015,7 +5015,7 @@
               this.debugTouchOverlayController && (w() || I()) && Oe();
               var _ = [b(), y()]
                 , P = Xe([], _, !0);
-              this.isBot || P.push(Te("js/null.js?https://imasdk.googleapis.com/js/sdkloader/ima3.js"), Te("js/null.js?https://securepubads.g.doubleclick.net/tag/js/gpt.js"), Te("js/null.js?https://a.poki.com/prebid/prebid6.12.0.js"), Te("js/null.js?https://c.amazon-adsystem.com/aax2/apstag.js"));
+              this.isBot || P.push(Te("js/null.js"), Te("js/null.js"), Te("js/null.js"), Te("js/null.js"));
               var B = function(e, i, o) {
                   if (void 0 === o && (o = !0),
                   t.country = x || (null == i ? void 0 : i.ISO) || "zz",
